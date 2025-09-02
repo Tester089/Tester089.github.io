@@ -1,0 +1,79 @@
+:root {
+    --bg-color: #f4f7f9;
+    --header-bg: #ffffff;
+    --table-border: #dfe6ee;
+    --th-bg: #2c3e50;
+    --sub-th-bg: #34495e;
+    --day-header-bg: #e9eef3;
+    --text-color: #333;
+    --lecture-color: #e74c3c;
+    --seminar-color: #3498db;
+    --english-color: #2ecc71;
+    --online-color: #9b59b6;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.page-header {
+    background-color: var(--header-bg);
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--table-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.page-header h1 { margin: 0 0 10px; }
+
+.controls button {
+    padding: 8px 15px; border: 1px solid #ccc; border-radius: 5px;
+    cursor: pointer; background-color: #fff; font-size: 14px; margin-right: 10px;
+}
+
+.controls button.active {
+    background-color: var(--th-bg); color: white; border-color: var(--th-bg);
+}
+
+.status { margin-top: 10px; color: #666; }
+
+.schedule-container { margin: 20px; overflow-x: auto; }
+
+table {
+    width: 100%; border-collapse: collapse; min-width: 1500px; background-color: #fff;
+}
+
+th, td {
+    border: 1px solid var(--table-border); padding: 10px;
+    text-align: center; vertical-align: top;
+}
+
+thead th {
+    background-color: var(--th-bg); color: white;
+    position: sticky; top: 85px; z-index: 50;
+}
+
+thead tr:last-child th { background-color: var(--sub-th-bg); }
+
+.day-header, .time-header {
+    font-weight: bold; background-color: var(--day-header-bg);
+    position: sticky; left: 0; z-index: 10;
+}
+.time-header { left: 120px; }
+
+.lesson {
+    padding: 8px; border-radius: 5px; color: white; margin-bottom: 5px;
+    font-size: 12px; text-align: left;
+}
+
+.lesson-title { font-weight: bold; }
+.lesson-details { margin-top: 4px; opacity: 0.9; }
+
+.lesson.lecture { background-color: var(--lecture-color); }
+.lesson.seminar { background-color: var(--seminar-color); }
+.lesson.english { background-color: var(--english-color); }
+.lesson.online { border: 2px dashed var(--online-color); color: var(--text-color); }

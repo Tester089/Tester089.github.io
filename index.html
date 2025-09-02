@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Простая страница</title>
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Привет, мир!</h1>
-    <p>Это всё был тест!</p>
+    <header class="page-header">
+        <h1>Timetable</h1>
+        <div class="controls">
+            <button id="btn-week1" data-gid="818504324">Неделя 1 (Общая)</button>
+            <button id="btn-week2" data-gid="477471212">Неделя 2 (По группам)</button>
+        </div>
+        <p id="status-indicator" class="status">Выберите неделю для загрузки расписания.</p>
+    </header>
+
+    <main>
+        <div id="schedule-container" class="schedule-container">
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
