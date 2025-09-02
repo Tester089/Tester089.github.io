@@ -29,45 +29,67 @@ body {
 }
 
 .page-header h1 { margin: 0 0 10px; }
+.status { margin-top: 10px; color: #666; }
 
 .controls button {
-    padding: 8px 15px; border: 1px solid #ccc; border-radius: 5px;
-    cursor: pointer; background-color: #fff; font-size: 14px; margin-right: 10px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .controls button.active {
-    background-color: var(--th-bg); color: white; border-color: var(--th-bg);
+    background-color: var(--th-bg);
+    color: white;
+    border-color: var(--th-bg);
 }
-
-.status { margin-top: 10px; color: #666; }
 
 .schedule-container { margin: 20px; overflow-x: auto; }
 
 table {
-    width: 100%; border-collapse: collapse; min-width: 1500px; background-color: #fff;
+    width: 100%;
+    min-width: 1500px;
+    border-collapse: collapse;
+    background-color: #fff;
 }
 
 th, td {
-    border: 1px solid var(--table-border); padding: 10px;
-    text-align: center; vertical-align: top;
+    padding: 10px;
+    border: 1px solid var(--table-border);
+    text-align: center;
+    vertical-align: top;
 }
 
 thead th {
-    background-color: var(--th-bg); color: white;
-    position: sticky; top: 85px; z-index: 50;
+    background-color: var(--th-bg);
+    color: white;
+    position: sticky;
+    top: 85px;
+    z-index: 50;
 }
 
 thead tr:last-child th { background-color: var(--sub-th-bg); }
 
 .day-header, .time-header {
-    font-weight: bold; background-color: var(--day-header-bg);
-    position: sticky; left: 0; z-index: 10;
+    font-weight: bold;
+    background-color: var(--day-header-bg);
+    position: sticky;
+    left: 0;
+    z-index: 10;
 }
+
 .time-header { left: 120px; }
 
 .lesson {
-    padding: 8px; border-radius: 5px; color: white; margin-bottom: 5px;
-    font-size: 12px; text-align: left;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
 }
 
 .lesson-title { font-weight: bold; }

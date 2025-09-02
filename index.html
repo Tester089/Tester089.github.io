@@ -10,19 +10,17 @@
     <header class="page-header">
         <h1>Timetable</h1>
         <div class="controls">
-            <button id="btn-week1" data-gid="818504324">Неделя 1 (Общая)</button>
-            <button id="btn-week2" data-gid="477471212">Неделя 2 (По группам)</button>
+            <button data-gid="818504324">Неделя 1 (Общая)</button>
+            <button data-gid="477471212">Неделя 2 (По группам)</button>
         </div>
-        <p id="status-indicator" class="status">Выберите неделю для загрузки расписания.</p>
+        <p id="status-indicator" class="status"></p>
     </header>
 
     <main>
-        <div id="schedule-container" class="schedule-container">
-        </div>
+        <div id="schedule-container" class="schedule-container"></div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-
     <script src="script.js"></script>
 </body>
 </html>
